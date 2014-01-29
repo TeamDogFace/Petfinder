@@ -13,15 +13,22 @@ module Petfinder
     end
 
     def get_token
-      signature = digest_arguments
+      signature = sign_key_and_secret
       session = self.class.get("/auth.getToken", {key: @api_key, sig: signature})
+
+      
     end
 
-    def digest_arguments(arguments={})
-      signature = "#{@api_secret}key=#{@api_key}" # base signature
-      arguments.each{ |key, value|  }
-      Digest::MD5.hexdigest
+    def sign_key_and_secret
+      raise StandardError.new("API Secret is required") unless @api_secret
+      Digest::MD5.hexdigest("#{@api_secret}key=#{@api_key}")
     end
+
+    # def digest_arguments(options={})
+    #   signature = "#{@api_secret}key=#{@api_key}" # base signature
+    #   options.each{ |key, value|  }
+    #   Digest::MD5.hexdigest
+    # end
 
   end
 
