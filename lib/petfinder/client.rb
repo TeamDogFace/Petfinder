@@ -18,7 +18,9 @@ module Petfinder
     end
 
     def digest_arguments(arguments={})
-
+      signature = "#{@api_secret}key=#{@api_key}" # base signature
+      arguments.each{ |key, value|  }
+      Digest::MD5.hexdigest
     end
 
   end
