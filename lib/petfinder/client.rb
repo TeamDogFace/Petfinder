@@ -18,7 +18,7 @@ module Petfinder
     end
 
     def digest_arguments(arguments={})
-      
+
     end
 
   end
