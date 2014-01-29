@@ -1,9 +1,10 @@
-require "httparty"
-require "digest/md5"
+require 'httparty'
+require 'nokogiri'
+require 'digest/md5'
 
-require "petfinder/version"
-require "petfinder/session"
-require "petfinder/client"
+require 'petfinder/version'
+require 'petfinder/session'
+require 'petfinder/client'
 
 module Petfinder
 

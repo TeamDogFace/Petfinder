@@ -13,10 +13,13 @@ module Petfinder
     end
 
     def get_token
-      signature = sign_key_and_secret
-      session = self.class.get("/auth.getToken", {key: @api_key, sig: signature})
+      query = {key: @api_key, sig: sign_key_and_secret}
+      response = self.class.get("/auth.getToken", {query: query})
 
+      raise StandardError.new("Bad HTTP response from the server") unless response.code.eql?(200)
       
+      # Parse response.body XML
+
     end
 
     def sign_key_and_secret
