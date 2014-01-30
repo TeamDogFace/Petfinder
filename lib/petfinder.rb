@@ -4,6 +4,7 @@ require 'digest/md5'
 require 'petfinder/version'
 require 'petfinder/session'
 require 'petfinder/client'
+require 'petfinder/hash_constructor'
 
 module Petfinder
 

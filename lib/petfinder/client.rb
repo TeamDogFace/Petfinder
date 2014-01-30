@@ -26,8 +26,19 @@ module Petfinder
     end
 
     def sign_key_and_secret
-      raise StandardError.new("API Secret is required") unless @api_secret
+      # raise StandardError.new("API Secret is required") unless @api_secret
+
       Digest::MD5.hexdigest("#{@api_secret}key=#{@api_key}")
+    end
+
+    def sign_options(args={})
+      # sig_str = 
+    end
+
+    def base_signature
+      raise StandardError.new("API Secret is required") unless @api_secret
+      "#{@api_secret}key=#{@api_key}"
+      # Digest::MD5.hexdigest("#{@api_secret}key=#{@api_key}")
     end
 
   end
