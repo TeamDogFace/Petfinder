@@ -1,5 +1,4 @@
 require 'httparty'
-require 'nokogiri'
 require 'digest/md5'
 
 require 'petfinder/version'

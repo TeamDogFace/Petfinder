@@ -16,22 +16,19 @@ module Petfinder
       query = {key: @api_key, sig: sign_key_and_secret}
       response = self.class.get("/auth.getToken", {query: query})
 
-      raise StandardError.new("Bad HTTP response from the server") unless response.code.eql?(200)
-      
-      # Parse response.body XML
+      raise StandardError.new("Bad HTTP response from the server") unless response.code.eql? 200
 
+      raise StandardError.new("#{response.parsed_response["petfinder"]["header"]["status"]["message"]}") unless response.parsed_response["petfinder"]["header"]["status"]["code"]
+      
+      auth = response.parsed_response["petfinder"]["auth"]
+      @session = Session.new(auth)
+      @session.token
     end
 
     def sign_key_and_secret
       raise StandardError.new("API Secret is required") unless @api_secret
       Digest::MD5.hexdigest("#{@api_secret}key=#{@api_key}")
     end
-
-    # def digest_arguments(options={})
-    #   signature = "#{@api_secret}key=#{@api_key}" # base signature
-    #   options.each{ |key, value|  }
-    #   Digest::MD5.hexdigest
-    # end
 
   end
 
