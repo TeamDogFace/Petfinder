@@ -13,9 +13,10 @@ module Petfinder
     end
 
     def get_token
-      query = {key: @api_key, sig: sign_key_and_secret}
+      query = {key: @api_key, sig: sign_secret_and_key}
       response = self.class.get("/auth.getToken", {query: query})
 
+      # Eww
       raise StandardError.new("Bad HTTP response from the server") unless response.code.eql? 200
 
       raise StandardError.new("#{response.parsed_response["petfinder"]["header"]["status"]["message"]}") unless response.parsed_response["petfinder"]["header"]["status"]["code"]
@@ -25,20 +26,29 @@ module Petfinder
       @session.token
     end
 
-    def sign_key_and_secret
-      # raise StandardError.new("API Secret is required") unless @api_secret
+    # I think there may be room for some Ruby block magic here...
+    def list_breeds(animal_type, options={})
+      query = {key: @api_key, animal: animal_type}.merge(options)
+      response = self.class.get("/breed.list", {query: query})
+      response.parsed_response["petfinder"]["breeds"]["breed"]
+    end
+
+    def get_pet(id, options={})
+      query = {key: @api_key, id: id}.merge(options)
+      response = self.class.get("/pet.get", {query: query})
+      pet = response.parsed_response["petfinder"]["pet"]
+      Pet.new(pet)
+    end
+
+    def get_random_pet(options={})
+      query = {key: @api_key}.merge(options)
+      response = self.class.get("/pet.getRandom", {query: query})
+    end
+
+    def sign_secret_and_key
+      raise StandardError.new("API Secret is required") unless @api_secret
 
       Digest::MD5.hexdigest("#{@api_secret}key=#{@api_key}")
-    end
-
-    def sign_options(args={})
-      # sig_str = 
-    end
-
-    def base_signature
-      raise StandardError.new("API Secret is required") unless @api_secret
-      "#{@api_secret}key=#{@api_key}"
-      # Digest::MD5.hexdigest("#{@api_secret}key=#{@api_key}")
     end
 
   end
