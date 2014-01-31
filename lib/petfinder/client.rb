@@ -43,6 +43,29 @@ module Petfinder
     def get_random_pet(options={})
       query = {key: @api_key}.merge(options)
       response = self.class.get("/pet.getRandom", {query: query})
+      pets = response.parsed_response["petfinder"]["pet"]
+      pets.map{ |pet| Pet.new(pet) }
+    end
+
+    def find_pet(location, options={})
+      query = {key: @api_key, location: location}.merge(options)
+      response = self.class.get("/pet.find", {query: query})
+      pets = response.parsed_response["petfinder"]["pets"]["pet"]
+      pets.map{ |pet| Pet.new(pet) }
+    end
+
+    def find_shelter(location, options={})
+      query = {key: @api_key, location: location}.merge(options)
+      response = self.class.get("/shelters.find", {query: query})
+      shelters = response.parsed_response["petfinder"]["shelters"]["shelter"]
+      shelters.map{ |shelter| Shelter.new(shelter) }
+    end
+
+    def get_shelter(id, options={})
+      query = {key: @api_key, id: id}.merge(options)
+      response = self.class.get("/shelter.get", {query: query})
+      shelter = response.parsed_response["petfinder"]["shelter"]
+      Shelter.new(shelter)
     end
 
     def sign_secret_and_key
