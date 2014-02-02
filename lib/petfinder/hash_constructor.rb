@@ -7,7 +7,7 @@ module Petfinder
     end
 
     def to_snake_case(str)
-      str.gsub(/(.)([A-Z])/, '\1_\2').downcase
+      str.to_s.gsub(/(.)([A-Z])/, '\1_\2').downcase
     end
   end
 end

@@ -1,10 +1,13 @@
 require 'httparty'
 require 'digest/md5'
 
-require 'petfinder/version'
-require 'petfinder/session'
-require 'petfinder/client'
 require 'petfinder/hash_constructor'
+require 'petfinder/session'
+require 'petfinder/pet'
+require 'petfinder/shelter'
+require 'petfinder/contact'
+require 'petfinder/client'
+require 'petfinder/version'
 
 module Petfinder
 
