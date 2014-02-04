@@ -1,0 +1,84 @@
+<petfinder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.petfinder.com/schemas/0.9/petfinder.xsd">
+	<header>
+		<version>0.1</version>
+		<timestamp>2014-02-04T14:31:08Z</timestamp>
+		<status>
+			<code>100</code>
+			<message/>
+		</status>
+	</header>
+	<pet>
+		<id>28432461</id>
+		<shelterId>CA1066</shelterId>
+		<shelterPetId>6593107</shelterPetId>
+		<name>Charlie</name>
+		<animal>Dog</animal>
+		<breeds>
+			<breed>Redbone Coonhound</breed>
+			<breed>Shepherd</breed>
+		</breeds>
+		<mix>no</mix>
+		<age>Adult</age>
+		<sex>M</sex>
+		<size>XL</size>
+		<options>
+			<option>altered</option>
+			<option>hasShots</option>
+			<option>housebroken</option>
+		</options>
+		<description>
+			<![CDATA[
+			If you cannot see this photo please go to our website www.fochp.org for a complete updated list of available pets. Our adoption process is quick and simple please do not fill out an adoption application if you are not serious about adopting one of our pets. If you are looking for a dog you can have
+			]]>
+			<![CDATA[
+			fun with and take anywhere - you just met Charlie. He is a fun loving guy who loves to go to dog parks, the beach, pet stores, friends, camping, jogging and just about anything you want to do. He is about 1 year old, has lots of energy and loves everyone he meets. He is great with dogs of all sizes and ages. He loves to play ball and play in the water. Charlie weighs 90 pounds. If you are interested in meeting or adopting Charlie please email us at fochp@yahoo.com Please visit us at our adoption events every Saturday our adoption locations can be seen on our website www.fochp.org You can email us at fochp@yahoo.com ABOUT OR RESCUE: FOCHP is completely run by donation with 100% of donations going to the aniamls. Donations of any kind are gratefully accepted and are tax deductible. We can always use toys, food, litter, beds, carriers, crates, leashes, collars and of course money! February 3, 2014, 6:11 pm
+			]]>
+		</description>
+		<lastUpdate>2014-02-03T23:53:33Z</lastUpdate>
+		<status>A</status>
+		<media>
+			<photos>
+				<photo id="1" size="x">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-1-x.jpg
+				</photo>
+				<photo id="1" size="fpm">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-1-fpm.jpg
+				</photo>
+				<photo id="1" size="pn">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-1-pn.jpg
+				</photo>
+				<photo id="1" size="pnt">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-1-pnt.jpg
+				</photo>
+				<photo id="1" size="t">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-1-t.jpg
+				</photo>
+				<photo id="2" size="x">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-2-x.jpg
+				</photo>
+				<photo id="2" size="fpm">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-2-fpm.jpg
+				</photo>
+				<photo id="2" size="pn">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-2-pn.jpg
+				</photo>
+				<photo id="2" size="pnt">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-2-pnt.jpg
+				</photo>
+				<photo id="2" size="t">
+				http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-2-t.jpg
+				</photo>
+			</photos>
+		</media>
+		<contact>
+			<address1>26423 Scott Road</address1>
+			<address2/>
+			<city>Orange</city>
+			<state>CA</state>
+			<zip>92865</zip>
+			<phone>714-280-4993</phone>
+			<fax>951-240-5833</fax>
+			<email>fochp@yahoo.com</email>
+		</contact>
+	</pet>
+</petfinder>

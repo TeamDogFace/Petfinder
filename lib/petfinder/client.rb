@@ -22,8 +22,7 @@ module Petfinder
       raise StandardError.new("#{response.parsed_response["petfinder"]["header"]["status"]["message"]}") unless response.parsed_response["petfinder"]["header"]["status"]["code"]
       
       auth = response.parsed_response["petfinder"]["auth"]
-      @session = Session.new(auth)
-      @session.token
+      Session.new(auth)
     end
 
     # I think there may be room for some Ruby block magic here...
@@ -66,6 +65,13 @@ module Petfinder
       response = self.class.get("/shelter.get", {query: query})
       shelter = response.parsed_response["petfinder"]["shelter"]
       Shelter.new(shelter)
+    end
+
+    def get_shelter_pets(id, options={})
+      query = {key: @api_key, id: id}.merge(options)
+      response = self.class.get("/shelter.getPets", {query: query})
+      pets = response.parsed_response["petfinder"]["pets"]["pet"]
+      pets.map{ |pet| Pet.new(pet) }
     end
 
     def sign_secret_and_key

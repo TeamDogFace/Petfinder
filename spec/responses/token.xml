@@ -1,0 +1,16 @@
+<petfinder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.petfinder.com/schemas/0.9/petfinder.xsd">
+	<header>
+		<version>0.1</version>
+		<timestamp>2014-02-04T13:50:12Z</timestamp>
+		<status>
+			<code>100</code>
+			<message/>
+		</status>
+	</header>
+	<auth>
+		<key>0140b2d393a544f46dad587e929c99f5</key>
+		<token>8e29306cb64dba0c9b75e2ec42c4c06b</token>
+		<expires>1391525412</expires>
+		<expiresString>2014-02-04T14:50:12Z</expiresString>
+	</auth>
+</petfinder>
