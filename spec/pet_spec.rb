@@ -19,7 +19,7 @@ describe Petfinder::Pet do
     expect(@pet.media.count).to eql(10)
   end
 
-  it "shoudl have correct contact" do
+  it "should have correct contact" do
     expect(@pet.contact.city).to eql('Orange')
     expect(@pet.contact.state).to eql('CA')
   end
