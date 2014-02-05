@@ -74,6 +74,13 @@ module Petfinder
       pets.map{ |pet| Pet.new(pet) }
     end
 
+    def list_shelter_pet_by_breed(animal, breed, options={})
+      query = {key: @api_key, animal: animal, breed: breed}.merge(options)
+      response = self.class.get("/shelter.listByBreed", {query: query})
+      shelters = response.parsed_response["petfinder"]["shelters"]["shelter"]
+      shelters.map{ |shelter| Shelter.new(shelter) }
+    end
+
     def sign_secret_and_key
       raise StandardError.new("API Secret is required") unless @api_secret
 

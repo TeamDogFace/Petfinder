@@ -1,0 +1,153 @@
+<petfinder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.petfinder.com/schemas/0.9/petfinder.xsd">
+	<header>
+		<version>0.1</version>
+		<timestamp>2014-01-30T20:00:48Z</timestamp>
+		<status>
+			<code>100</code>
+			<message/>
+		</status>
+	</header>
+	<pet>
+		<id>28287204</id>
+		<shelterId>GA609</shelterId>
+		<shelterPetId/>
+		<name>Iso</name>
+		<animal>Dog</animal>
+		<breeds>
+			<breed>Standard Poodle</breed>
+			<breed>Schnauzer</breed>
+		</breeds>
+		<mix>yes</mix>
+		<age>Adult</age>
+		<sex>F</sex>
+		<size>L</size>
+		<options>
+			<option>altered</option>
+			<option>hasShots</option>
+			<option>housebroken</option>
+			<option>noCats</option>
+		</options>
+		<description>
+			<![CDATA[
+			2 years/65 lbs Very sweet loving girl. Crate trained. adoption fee $200.00
+			]]>
+		</description>
+		<lastUpdate>2014-01-29T20:16:47Z</lastUpdate>
+		<status>X</status>
+		<media>
+			<photos>
+				<photo id="1" size="x">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-1-x.jpg
+				</photo>
+				<photo id="1" size="fpm">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-1-fpm.jpg
+				</photo>
+				<photo id="1" size="pn">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-1-pn.jpg
+				</photo>
+				<photo id="1" size="pnt">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-1-pnt.jpg
+				</photo>
+				<photo id="1" size="t">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-1-t.jpg
+				</photo>
+				<photo id="2" size="x">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-2-x.jpg
+				</photo>
+				<photo id="2" size="fpm">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-2-fpm.jpg
+				</photo>
+				<photo id="2" size="pn">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-2-pn.jpg
+				</photo>
+				<photo id="2" size="pnt">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-2-pnt.jpg
+				</photo>
+				<photo id="2" size="t">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-2-t.jpg
+				</photo>
+				<photo id="3" size="x">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-3-x.jpg
+				</photo>
+				<photo id="3" size="fpm">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-3-fpm.jpg
+				</photo>
+				<photo id="3" size="pn">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-3-pn.jpg
+				</photo>
+				<photo id="3" size="pnt">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-3-pnt.jpg
+				</photo>
+				<photo id="3" size="t">
+				http://photos.petfinder.com/photos/US/GA/GA609/28287204/GA609.28287204-3-t.jpg
+				</photo>
+			</photos>
+		</media>
+		<contact>
+			<address1>3496 Lakeshore Drive</address1>
+			<address2/>
+			<city>Smyrna</city>
+			<state>GA</state>
+			<zip>30082</zip>
+			<phone>404-275-7446</phone>
+			<fax/>
+			<email>danasdoghouse@charter.net</email>
+		</contact>
+	</pet>
+	<pet>
+		<id>22929455</id>
+		<shelterId>TN611</shelterId>
+		<shelterPetId/>
+		<name>CANDY</name>
+		<animal>Dog</animal>
+		<breeds>
+			<breed>West Highland White Terrier Westie</breed>
+		</breeds>
+		<mix>no</mix>
+		<age>Adult</age>
+		<sex>F</sex>
+		<size>S</size>
+		<options>
+			<option>altered</option>
+			<option>hasShots</option>
+			<option>housebroken</option>
+			<option>noKids</option>
+		</options>
+		<description>
+			<![CDATA[
+			Candy is a precious Westie girl. Everyone falls in love with this sweet, laid back little love bug! Candy spent her first years as a breeding dog and has lots of love to give. She has time to make up for and this sweet girl loves being with her human on the sofa or better yet....in their lap! Candy will make a wonderful companion for some lucky family. An active retired couple would be perfect for Miss Candy. She is 9 years old, loves people and is a gentle Westie girl. She gets along well with other dogs, but her humans are her main love. Candy will be available for adoption on May 20, 2012. Her adoption fee is $250.00. If you have room in your heart and home for this precious Westie, please send us an e-mail. We'll be happy to give you more info and send you an application. Thanks!
+			]]>
+		</description>
+		<lastUpdate>2013-12-07T15:15:28Z</lastUpdate>
+		<status>X</status>
+		<media>
+			<photos>
+				<photo id="1" size="x">
+				http://photos.petfinder.com/photos/US/TN/TN611/22929455/TN611.22929455-1-x.jpg
+				</photo>
+				<photo id="1" size="fpm">
+				http://photos.petfinder.com/photos/US/TN/TN611/22929455/TN611.22929455-1-fpm.jpg
+				</photo>
+				<photo id="1" size="pn">
+				http://photos.petfinder.com/photos/US/TN/TN611/22929455/TN611.22929455-1-pn.jpg
+				</photo>
+				<photo id="1" size="pnt">
+				http://photos.petfinder.com/photos/US/TN/TN611/22929455/TN611.22929455-1-pnt.jpg
+				</photo>
+				<photo id="1" size="t">
+				http://photos.petfinder.com/photos/US/TN/TN611/22929455/TN611.22929455-1-t.jpg
+				</photo>
+			</photos>
+		</media>
+		<contact>
+			<address1/>
+			<address2/>
+			<city>Brentwood</city>
+			<state>TN</state>
+			<zip>37027</zip>
+			<phone></phone>
+			<fax/>
+			<email>WRSEadoptions@gmail.com</email>
+		</contact>
+	</pet>
+</petfinder>

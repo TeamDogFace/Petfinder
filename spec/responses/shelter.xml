@@ -1,0 +1,25 @@
+<petfinder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.petfinder.com/schemas/0.9/petfinder.xsd">
+	<header>
+		<version>0.1</version>
+		<timestamp>2014-01-30T20:49:11Z</timestamp>
+		<status>
+			<code>100</code>
+			<message/>
+		</status>
+	</header>
+	<shelter>
+		<id>PA162</id>
+		<name>Humane Society of Northwestern Pennsylvania</name>
+		<address1>2407 Zimmerly Road</address1>
+		<address2>Erie, PA 16506</address2>
+		<city>Erie</city>
+		<state>PA</state>
+		<zip>16506</zip>
+		<country>US</country>
+		<latitude>42.0988</latitude>
+		<longitude>-80.0897</longitude>
+		<phone>814-835-8331</phone>
+		<fax>814-835-8341</fax>
+		<email>nwpahs@choiceonemail.com</email>
+	</shelter>
+</petfinder>
