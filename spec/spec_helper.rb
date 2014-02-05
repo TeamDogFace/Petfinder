@@ -18,6 +18,7 @@ RSpec.configure do |config|
     stub_get('breed.list?animal=dog&key=abcde', 'breeds.xml')
     stub_get('pet.get?id=28432461&key=abcde', 'pet.xml')
     stub_get('pet.getRandom?key=abcde', 'random.xml')
+    stub_get('pet.getRandom?key=abcde&output=full', 'random.xml')
     stub_get('shelter.get?id=PA162&key=abcde', 'shelter.xml')
   end
 end

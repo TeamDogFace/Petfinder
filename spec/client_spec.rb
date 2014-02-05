@@ -30,7 +30,7 @@ describe Petfinder::Client do
   end
 
   it "should return random pets" do
-    pets = @client.get_random_pet()
+    pets = @client.get_random_pet({output: 'full'})
 
     expect(pets.id).to eq('13836294')
   end
