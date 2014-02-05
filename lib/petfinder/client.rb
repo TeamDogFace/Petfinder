@@ -42,8 +42,8 @@ module Petfinder
     def get_random_pet(options={})
       query = {key: @api_key}.merge(options)
       response = self.class.get("/pet.getRandom", {query: query})
-      pets = response.parsed_response["petfinder"]["pet"]
-      pets.map{ |pet| Pet.new(pet) }
+      pet = response.parsed_response["petfinder"]["pet"]
+      Pet.new(pet)
     end
 
     def find_pet(location, options={})

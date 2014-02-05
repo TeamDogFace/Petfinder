@@ -11,36 +11,36 @@ describe Petfinder::Client do
 
     expect(session).to_not be_nil
     expect(session.token).to_not be_nil
-    expect(session.expires).to eql('1391525412')
+    expect(session.expires).to eq('1391525412')
   end
 
   it "should return all the breeds of dogs" do
     dogs = @client.list_breeds('dog')
 
     expect(dogs.count).to eql(241)
-    expect(dogs[0]).to eql('Affenpinscher')
+    expect(dogs[0]).to eq('Affenpinscher')
   end
 
   it "should return pet with id 28432461" do
     pet = @client.get_pet('28432461')
 
     expect(pet).to_not be_nil
-    expect(pet.name).to eql('Charlie')
-    expect(pet.contact.zip).to eql('92865')
+    expect(pet.name).to eq('Charlie')
+    expect(pet.contact.zip).to eq('92865')
   end
 
   it "should return random pets" do
     pets = @client.get_random_pet()
 
-    expect(pets.count).to be > 0
+    expect(pets.id).to eq('13836294')
   end
 
   it "should shelter with id PA162" do
     shelter = @client.get_shelter('PA162')
 
-    expect(shelter.id).to eql('PA162')
-    expect(shelter.city).to eql('Erie')
-    expect(shelter.state).to eql('PA') 
+    expect(shelter.id).to eq('PA162')
+    expect(shelter.city).to eq('Erie')
+    expect(shelter.state).to eq('PA') 
   end
 
 end
