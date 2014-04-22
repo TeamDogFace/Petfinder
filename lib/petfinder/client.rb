@@ -49,7 +49,7 @@ module Petfinder
     def find_pet(location, options={})
       query = {key: @api_key, location: location}.merge(options)
       response = self.class.get("/pet.find", {query: query})
-      pets = response.parsed_response["petfinder"]["pets"]["pet"]
+      pets = response.parsed_response["petfinder"]["pets"]
       pets.map{ |pet| Pet.new(pet) }
     end
 
