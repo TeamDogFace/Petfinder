@@ -25,7 +25,6 @@ module Petfinder
       Session.new(auth)
     end
 
-    # I think there may be room for some Ruby block magic here...
     def list_breeds(animal_type, options={})
       query = {key: @api_key, animal: animal_type}.merge(options)
       response = self.class.get("/breed.list", {query: query})

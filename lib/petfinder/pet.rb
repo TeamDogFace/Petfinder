@@ -16,7 +16,7 @@ module Petfinder
     end
 
     def media=(media)
-      @media = media["photos"]["photo"] unless media.nil?
+      @media = media["photos"]["photo"].map{ |d| Photo.new(d) } unless media.nil?
     end
 
     def contact=(contact)

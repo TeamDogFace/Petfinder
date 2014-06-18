@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tewing10@gmail.com"]
   spec.description   = %q{Ruby wrapper for the Petfinder REST API}
   spec.summary       = %q{Ruby wrapper for the Petfinder REST API}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/TeamDogFace/Petfinder"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
