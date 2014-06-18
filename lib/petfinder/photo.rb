@@ -1,7 +1,6 @@
 module Petfinder
 
   class Photo
-    include HashConstructor
     attr_accessor :id, :size, :url
 
     def initialize(data={})
