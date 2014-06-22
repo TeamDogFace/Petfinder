@@ -7,6 +7,7 @@ require 'petfinder/pet'
 require 'petfinder/shelter'
 require 'petfinder/contact'
 require 'petfinder/client'
+require 'petfinder/photo'
 require 'petfinder/version'
 
 module Petfinder

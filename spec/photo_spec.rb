@@ -12,7 +12,13 @@ describe Petfinder::Photo do
   end
 
   it "should have two different photos" do
-    expect(@pet.media.map{ |p| p.id }.uniq).to eql(2)
+    uniq_photos = @pet.media.map{ |p| p.id }.uniq
+    expect(uniq_photos.length).to eql(2)
+  end
+
+  it "should have correct url" do
+    url = "http://photos.petfinder.com/photos/US/CA/CA1066/28432461/CA1066.28432461-1-x.jpg"
+   expect(@pet.media.first.url).to eql(url) 
   end
 end
 
